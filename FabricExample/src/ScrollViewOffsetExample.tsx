@@ -12,7 +12,7 @@ export default function ScrollViewOffsetExample() {
   const scrollHandler = useScrollViewOffset(aref);
 
   useAnimatedStyle(() => {
-    console.log(scrollHandler.value);
+    console.log(scrollHandler.value.value);
     return {};
   });
 

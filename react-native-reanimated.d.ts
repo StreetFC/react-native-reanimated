@@ -1,6 +1,5 @@
 // Project: https://github.com/software-mansion/react-native-reanimated
 // TypeScript Version: 2.8
-
 declare module 'react-native-reanimated' {
   import {
     ComponentClass,
@@ -564,9 +563,13 @@ declare module 'react-native-reanimated' {
   };
   export function useAnimatedKeyboard(): AnimatedKeyboardInfo;
 
+  export class ScrollViewOffset {
+    get value(): number;
+    set value(v: number);
+  }
   export function useScrollViewOffset(
     aref: RefObject<Animated.ScrollView>
-  ): SharedValue<number>;
+  ): SharedValue<ScrollViewOffset>;
 
   export interface ExitAnimationsValues {
     currentOriginX: number;
