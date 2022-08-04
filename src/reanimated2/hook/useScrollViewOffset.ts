@@ -19,7 +19,6 @@ export class ScrollViewOffset {
   public get value() {
     return 0;
   }
-  // eslint-disable-next-line @typescript-eslint/no-empty-function
   public set value(v: number) {}
 }
 
